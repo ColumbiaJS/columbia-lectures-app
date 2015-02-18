@@ -9,7 +9,8 @@
       useminPrepare : 'grunt-usemin',
       cdnify        : 'grunt-google-cdn',
       ngtemplates   : 'grunt-angular-templates',
-      changelog     : 'grunt-conventional-changelog'
+      changelog     : 'grunt-conventional-changelog',
+      buildcontrol  : 'grunt-build-control'
     };
     require('jit-grunt')(grunt, justInTimeStaticMappings);    // just-in-time plugin loader (no more loadNpmTasks)
     require('time-grunt')(grunt);
@@ -76,7 +77,22 @@
 
       /* VERSION AND RELEASE */
       release      : require('./grunt/release/release'),
-      changelog    : require('./grunt/release/changelog')
+      changelog    : require('./grunt/release/changelog'),
+      buildcontrol: {
+        options: {
+          dir: 'dist',
+          commit: true,
+          push: true,
+          connectCommits: false,
+          message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+        },
+        heroku: {
+          options: {
+            remote: 'heroku',
+            branch: 'master'
+          }
+        }
+      }
     };
 
 
