@@ -23,6 +23,12 @@
   <!-- endbuild -->
 
   <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/angular-hotkeys/build/hotkeys.min.css" />
+  <link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog.css" />
+  <link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog-theme-default.css" />
+  <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css" />
+  <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
   <!-- endbower -->
 
 </head>
@@ -60,9 +66,59 @@
   <![endif]-->
   <!-- build:js app/app.min.js -->
   <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-utils-pagination/dirPagination.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-hotkeys/build/hotkeys.min.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/angular-moment/angular-moment.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/ngDialog/js/ngDialog.js"></script>
+  <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
+  <script src="bower_components/angular-ui-select/dist/select.js"></script>
+  <script src="bower_components/angular-toastr/dist/angular-toastr.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/satellizer/satellizer.js"></script>
   <!-- endbower -->
 
   <!-- injector:js -->
+  <script src="app/app.module.js"></script>
+  <script src="app/core/app.core.module.js"></script>
+  <script src="app/core/logger/core.logger.module.js"></script>
+  <script src="app/dashboard/dashboard.module.js"></script>
+  <script src="app/app.config.js"></script>
+  <script src="app/core/auth/AuthCtrl.js"></script>
+  <script src="app/core/auth/IdentityService.js"></script>
+  <script src="app/core/auth/LoginCtrl.js"></script>
+  <script src="app/core/auth/LogoutCtrl.js"></script>
+  <script src="app/core/auth/SignupCtrl.js"></script>
+  <script src="app/core/auth/lvAuthWidget.js"></script>
+  <script src="app/core/auth/passwordStrength.js"></script>
+  <script src="app/core/common.js"></script>
+  <script src="app/core/config.js"></script>
+  <script src="app/core/effects/escFocus.js"></script>
+  <script src="app/core/logger/logger.js"></script>
+  <script src="app/core/nav/cuNavbar.js"></script>
+  <script src="app/core/nav/lvNavMenu.js"></script>
+  <script src="app/core/search/SearchCtrl.js"></script>
+  <script src="app/core/search/SearchService.js"></script>
+  <script src="app/core/search/WebSuggestService.js"></script>
+  <script src="app/core/search/lvSearchBar.js"></script>
+  <script src="app/core/user/AccountService.js"></script>
+  <script src="app/core/user/ProfileCtrl.js"></script>
+  <script src="app/core/user/User.js"></script>
+  <script src="app/dashboard/DashboardCtrl.js"></script>
+  <script src="app/dashboard/config.route.js"></script>
   <!-- endinjector -->
   <!-- endbuild -->
 </body>
